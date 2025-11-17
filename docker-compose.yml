@@ -1,0 +1,23 @@
+services:
+  rabbitmq:
+    image: rabbitmq:3.11-management
+    environment:
+      RABBITMQ_DEFAULT_USER: guest
+      RABBITMQ_DEFAULT_PASS: guest
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+
+  mongo_posts:
+    image: mongo:6
+    ports:
+      - "27017:27017"
+
+  postgres_users:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: users
+      POSTGRES_PASSWORD: users_pass
+      POSTGRES_DB: usersdb
+    ports:
+      - "5432:5432"

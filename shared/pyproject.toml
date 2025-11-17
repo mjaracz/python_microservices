@@ -1,0 +1,18 @@
+[project]
+name = "microservices-shared"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "aio-pika",
+    "pydantic",
+    "motor",
+    "sqlalchemy[asyncio]",
+    "psycopg[binary]"
+]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]

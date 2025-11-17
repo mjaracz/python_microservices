@@ -1,0 +1,23 @@
+[project]
+name = "users"
+version = "0.1.0"
+requires-python = ">=3.10"
+
+dependencies = [
+    "sqlalchemy",
+    "psycopg[binary]",
+    "aio-pika",
+    "tenacity",
+    "pydantic",
+    "python-jose",
+    "passlib[bcrypt]"
+]
+
+[project.optional-dependencies]
+dev = ["watchfiles"]
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
