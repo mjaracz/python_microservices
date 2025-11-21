@@ -7,8 +7,7 @@ dnspython==2.8.0
 ecdsa==0.19.1
 greenlet==3.2.4
 idna==3.11
-# Editable install with no version control (microservices-shared==0.1.0)
--e /home/bob/Dokumenty/python_microservices/shared
+-e git+ssh://git@github.com/mjaracz/python_microservices.git@b235df2635d516cafa3a9342bf00a192bcd2b6da#egg=microservices_shared&subdirectory=shared
 motor==3.7.1
 multidict==6.7.0
 pamqp==3.3.0
@@ -29,8 +28,7 @@ SQLAlchemy==2.0.44
 tenacity==9.1.2
 typing-inspection==0.4.2
 typing_extensions==4.15.0
-# Editable install with no version control (users==0.1.0)
--e /home/bob/Dokumenty/python_microservices/users
+-e git+ssh://git@github.com/mjaracz/python_microservices.git@b235df2635d516cafa3a9342bf00a192bcd2b6da#egg=users&subdirectory=users
 watchfiles==1.1.1
 wheel==0.45.1
 yarl==1.22.0

@@ -5,13 +5,11 @@ anyio==4.11.0
 dnspython==2.8.0
 greenlet==3.2.4
 idna==3.11
-# Editable install with no version control (microservices-shared==0.1.0)
--e /home/bob/Dokumenty/python_microservices/shared
+-e git+ssh://git@github.com/mjaracz/python_microservices.git@b235df2635d516cafa3a9342bf00a192bcd2b6da#egg=microservices_shared&subdirectory=shared
 motor==3.7.1
 multidict==6.7.0
 pamqp==3.3.0
-# Editable install with no version control (posts==0.1.0)
--e /home/bob/Dokumenty/python_microservices/posts
+-e git+ssh://git@github.com/mjaracz/python_microservices.git@b235df2635d516cafa3a9342bf00a192bcd2b6da#egg=posts&subdirectory=posts
 propcache==0.4.1
 psycopg==3.2.12
 psycopg-binary==3.2.12
